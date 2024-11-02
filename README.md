@@ -78,6 +78,6 @@ Before you begin, ensure you have met the following requirements:
    ```bash
    ./calc
 
+# 🙏 Thank You
 
-
-
+Thank you for taking the time to read through the documentation! Your interest and feedback are greatly appreciated.
