@@ -33,16 +33,3 @@
 - **Tools**: Lex (Lexical Analyzer) and YACC (Yet Another Compiler Compiler)
 - **Programming Language**: C (for integrating Lex and YACC functionality)
 
----
-
-## 📂 Project Structure
-
-```plaintext
-.
-├── README.md          # Project description
-├── src/
-│   ├── calculator.l   # Lex file for lexical analysis
-│   ├── calculator.y   # YACC file for syntax parsing
-│   └── main.c         # Main program entry and utilities
-└── docs/
-    └── report.pdf     # Project report detailing the implementation
