@@ -33,3 +33,51 @@
 - **Tools**: Lex (Lexical Analyzer) and YACC (Yet Another Compiler Compiler)
 - **Programming Language**: C (for integrating Lex and YACC functionality)
 
+
+## 🖥️ Installation Guide
+
+### 📋 Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Operating System**: Linux or macOS (Lex and YACC are typically available by default on these systems)
+- **Lex and YACC**: Ensure Lex (or Flex) and YACC (or Bison) are installed.
+  - **Install Flex and Bison on Ubuntu/Debian**:
+    ```bash
+    sudo apt-get update
+    sudo apt-get install flex bison
+    ```
+  - **Install Flex and Bison on macOS** (using Homebrew):
+    ```bash
+    brew install flex bison
+    ```
+- **C Compiler**: GCC is recommended.
+  - **Install GCC on Ubuntu/Debian**:
+    ```bash
+    sudo apt-get install build-essential
+    ```
+  - **Install GCC on macOS**:
+    ```bash
+    brew install gcc
+    ```
+
+### 📥 Download and Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/OS-CalcCompiler.git
+   cd OS-CalcCompiler
+2. **Run the following commands to generate lex.yy.c, y.tab.c, and y.tab.h from the source files:**:
+   ```bash
+   yacc -d src/cal.y         # Generates y.tab.c and y.tab.h
+   lex src/cal.l             # Generates lex.yy.c
+3. **Compile the Program**:
+   ```bash
+   gcc y.tab.c lex.yy.c -o calc -lm
+4. **Run the program**
+   ```bash
+   ./calc
+
+
+
+
